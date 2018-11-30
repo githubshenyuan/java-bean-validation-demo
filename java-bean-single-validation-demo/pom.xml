@@ -35,17 +35,25 @@
         <!--</dependency>-->
 
         <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-validator -->
+        <!--<dependency>-->
+            <!--<groupId>org.hibernate</groupId>-->
+            <!--<artifactId>hibernate-validator</artifactId>-->
+            <!--<version>6.0.13.Final</version>-->
+        <!--</dependency>-->
+
+        <!--<dependency>-->
+            <!--<groupId>org.glassfish</groupId>-->
+            <!--<artifactId>javax.el</artifactId>-->
+            <!--<version>3.0.1-b09</version>-->
+        <!--</dependency>-->
+
+        <!-- https://mvnrepository.com/artifact/net.sf.oval/oval -->
         <dependency>
-            <groupId>org.hibernate</groupId>
-            <artifactId>hibernate-validator</artifactId>
-            <version>6.0.13.Final</version>
+            <groupId>net.sf.oval</groupId>
+            <artifactId>oval</artifactId>
+            <version>1.90</version>
         </dependency>
 
-        <dependency>
-            <groupId>org.glassfish</groupId>
-            <artifactId>javax.el</artifactId>
-            <version>3.0.1-b09</version>
-        </dependency>
 
     </dependencies>
 </project>
