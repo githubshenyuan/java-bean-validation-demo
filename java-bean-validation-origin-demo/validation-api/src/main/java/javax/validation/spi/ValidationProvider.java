@@ -61,6 +61,8 @@ public interface ValidationProvider<T extends Configuration<T>> {
 	 * @param configurationState the configuration descriptor
 	 * @return the instantiated {@code ValidatorFactory}
 	 * @throws ValidationException if the {@code ValidatorFactory} cannot be built
+	 * 使用当前提供的实现，构建一个 validationFactory
+	 * 这个 validationFactory 被组装，并遵循配置的传递
 	 */
 	ValidatorFactory buildValidatorFactory(ConfigurationState configurationState);
 }

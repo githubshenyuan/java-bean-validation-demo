@@ -333,7 +333,9 @@ public class ConfigurationImpl implements HibernateValidatorConfiguration, Confi
 
 	@Override
 	public final ValidatorFactory buildValidatorFactory() {
+		// 加载值提取器从"服务加载"
 		loadValueExtractorsFromServiceLoader();
+		// 解析 xml 配置 （如果存在）
 		parseValidationXml();
 
 		for ( ValueExtractorDescriptor valueExtractorDescriptor : valueExtractorDescriptors.values() ) {
@@ -517,6 +519,7 @@ public class ConfigurationImpl implements HibernateValidatorConfiguration, Confi
 
 	/**
 	 * Tries to check whether a validation.xml file exists and parses it
+	 * 尝试去检查是否存在 validation.xml 并解析它
 	 */
 	private void parseValidationXml() {
 		if ( ignoreXmlConfiguration ) {
