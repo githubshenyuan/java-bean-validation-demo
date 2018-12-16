@@ -19,11 +19,12 @@ package javax.validation;
 public interface ValidatorFactory extends AutoCloseable {
 
 	/**
+	 * 返回一个初始化的 {@link Validator} 实例
 	 * Returns an initialized {@link Validator} instance using the
 	 * factory defaults for message interpolator, traversable resolver
 	 * and constraint validator factory.
 	 * <p>
-	 * Validator instances can be pooled and shared by the implementation.
+	 * validator instances can be pooled and shared by the implementation.
 	 *
 	 * @return an initialized {@code Validator} instance
 	 */

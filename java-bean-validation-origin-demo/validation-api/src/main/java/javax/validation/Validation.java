@@ -84,6 +84,7 @@ import javax.validation.spi.ValidationProvider;
 public class Validation {
 
 	/**
+	 * 创建并返回一个 {@link ValidatorFactory} 实例
 	 * Builds and returns a {@link ValidatorFactory} instance based on the
 	 * default Bean Validation provider and following the XML configuration.
 	 * <p>
