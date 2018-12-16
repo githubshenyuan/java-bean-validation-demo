@@ -2,11 +2,14 @@ package com.example.entity;
 
 //import javax.validation.constraints.NotNull;
 
+import net.sf.oval.constraint.NotNull;
+
 /**
  * @author sh on 2018/11/30 22:41
  * @version ideaIU-2018.2.3.win_home
  */
 public class UserEntity {
+    @NotNull(message = "userUuid 不能为空", profiles = {"userUuid"})
     private String uuid;
     //@NotNull(message = "用户名不能为空")
     private String username;
