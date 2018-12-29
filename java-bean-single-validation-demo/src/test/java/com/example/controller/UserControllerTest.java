@@ -10,7 +10,7 @@ import static org.junit.Assert.*;
  */
 public class UserControllerTest {
 
-    @Test
+    c
     public void validate() {
         UserController userController = new UserController();
         userController.validate();

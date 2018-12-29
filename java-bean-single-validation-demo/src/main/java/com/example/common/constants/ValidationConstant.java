@@ -9,5 +9,6 @@ public class ValidationConstant {
     public final static String[] GENERIC_PROFILE={"gradeName","uuid","createDate"
             ,"studentEntity","studentUuid","realName","sex","birthDay","age","userEntity"
             ,"userUuid"};
+    public final static String[] GENERIC_NULL_PROFILE={"gradeName"};
 }
 

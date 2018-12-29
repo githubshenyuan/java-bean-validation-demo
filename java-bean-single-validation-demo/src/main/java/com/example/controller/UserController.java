@@ -22,12 +22,12 @@ public class UserController {
         GradeEntity gradeEntity = new GradeEntity();
         Validator validator = new Validator();
         gradeEntity.setUuid("");
-        gradeEntity.setGradeName("");
+        gradeEntity.setGradeName("123");
         StudentEntity studentEntity = new StudentEntity();
         gradeEntity.setStudentEntity(studentEntity);
         UserEntity userEntity = new UserEntity();
         studentEntity.setUserEntity(userEntity);
-        List<ConstraintViolation> constraintSets = validator.validate(gradeEntity, ValidationConstant.GENERIC_PROFILE);
+        List<ConstraintViolation> constraintSets = validator.validate(gradeEntity, ValidationConstant.GENERIC_NULL_PROFILE);
 
         for (ConstraintViolation constraintSet : constraintSets) {
             System.out.println(constraintSet.getCauses());
